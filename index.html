@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Coronel toldos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./Imagens/logo.jpg">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--CSS files for icons --> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--MyCSS file-->
+  <link rel="stylesheet" href="./CSS/Styeles.css">
+</head>
+<body>
+ <!--NAV BAR--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <img src="./Imagens/logo.jpg">
+      <button class="navbar-toggler bg-primary " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="Myfunction()" href="#galery">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>      
+   <!--END OF NAV BAR-->   
+   <!--Section About-->
+    <section id="home" class="bg-cover hero-section" style="background-image: url(./Imagens/Imagem08.jpg);">
+    <div class="overlay"></div>
+      <div class="container text-white text-center">
+        <div class="row">
+          <div class="col-12"></div>
+          <h1 class="display-4">Coronel Toldos</h1>
+            <p class="my-4">Uma empresa com mais de 20 no mercado, especializada na fabricação, manutenção e recuperação de Toldos</p>
+            <h2>Trabalhamos  mais diversos tipos e modelos:<br> Toldos Fixo em  Lona, Policarbonato, Cortina de Rolo</h2>
+              <p class="my-4">Materiais de alta qualidade e procedência, contamos com uma equipe especializada e mão de obra capacitada.</p>
+              <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Assista o Video</button> 
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleVideo" aria-hidden="true">
+            <div class="modal-dialog">
+                <video width="320" height="240" controls>
+                  <source src="./video/sobre-coronel.mp4" type="video/mp4">
+                </video>
+          </div>
+          </div>
+    <!--Section Galery-->
+      <section id="galery">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 section-galery text-center">
+                <h1>Nossos Serviços</h1>
+                <div class="divider"></div>
+                  <p>Rápida instalação, tudo isso para sua comodidade</p>
+              </div>
+                <div class="gallery min-vh-100">
+                            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                <div class="col">
+                                    <img src="./Imagens/Imagem01.jpg" class="gallery-item" alt="gallery">
+                                </div>
+                                <div class="col">
+                                  <img src="./Imagens/Imagem03.jpg" class="gallery-item" alt="gallery">
+                              </div>
+                              <div class="col">
+                                <img src="./Imagens/Imagem07.jpg" class="gallery-item" alt="gallery">
+                            </div>
+                            <div class="col">
+                              <img src="./Imagens/Imagem05.jpg" class="gallery-item" alt="gallery">
+                          </div>
+                          <div class="col">
+                              <img src="./Imagens/Imagem02.jpg" class="gallery-item" alt="gallery">
+                            </div>
+                            <div class="col">
+                              <img src="./Imagens/Imagem14.jpg" class="gallery-item" alt="gallery">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>-->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...<img src="./Imagens/Imagem01.jpg " class="modal-img" alt="modal image">
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Contatc--> 
+     <section id="contact" class="bg-contact contact" style="background-image: url(./Imagens/Imagem11.jpg);">
+      <div class="overlay"></div>
+        <div class="container text-white text-center">
+          <div class="row">
+            <div class="col-12"></div>
+              <h1 class="display-4">Contate-nos</h1>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6">
+                      <img class="img-fluid map-location" src="./Imagens/mapalocation2.png ">
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi-whatsapp"></i>
+                      <p  class="h1 whatsapp"><a id="whatsappLink" onmouseover="Myfunction2()" onmouseout="myfunction3()" href="https://wa.me/5514996674740">(14)99667-4740</a></p>
+                     <i class="bi-telephone"></i>
+                      <p class="h2 telephone">(14)3032-3405</p>
+                      
+                </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
+      <section id="footer" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                  <p class="text-center footer-text">&copy;  Julio Cesar Pereira </p>
+                  
+              </div>     
+            </div>
+          </div>
+      </section> 
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./JS/anime.min.js"></script>     
+  <script src="./JS/main.js"></script>
+</body>
+</html>

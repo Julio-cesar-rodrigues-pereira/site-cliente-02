@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,800;1,600;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,800;1,600;1,900&family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+
+body{
+   font-family: "Bodoni", sans-serif;
+   line-height: 1.8;
+
+}
+
+h1,h2,h3,h4,h5{
+  font-weight: 900 important; 
+
+
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 800;
+  font-size: x-large;
+
+ 
+}
+
+.navbar{
+  box-shadow:0 12px 20px rgba(0,0,0,0.1);
+}
+
+li:hover{
+ background-color: antiquewhite;
+  
+}
+a:hover{
+ color: blanchedalmond;
+ transform: translatey(6px)
+
+}
+
+
+.section-galery{
+  margin-bottom: 40px;
+}
+
+.section-galery .divider{
+  height: 2px;
+  width: 70px;
+  background: linear-gradient(rgba(0,224,254, 0.7),rgba(17,7,254,0.7));
+  margin: 16px auto;
+  
+}
+
+.gallery{
+  background-color: #dbddf1;
+  padding: 900px, 0;
+
+}
+
+.gallery-item{
+  max-width: 100%;
+}
+
+.gallery img{
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+ width: 100%; 
+   
+}
+#galery p{
+color: #1107fe;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size:1.5 em ;
+}
+
+section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
+
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,224,254, 0.7),rgba(17,7,254,0.7));
+  z-index: -1; 
+
+}
+
+.bg-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.btn{
+  padding: 14px , 22px;
+  transition: all 0.4s ease;
+
+}
+
+.btn-lg{
+  background: linear-gradient(to right, #00e0fe, #1107fe);
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn:hover{
+  color:#fff;
+  transform: translateY(-5px);
+}
+
+/* here is where de size of section is good  */
+.hero-section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg-contact{
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position:center;
+ background-attachment: fixed; 
+}
+
+.contact{
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-whatsapp{
+  color: rgb(46, 245, 11);
+  font-size: xx-large;
+  font-family:'Roboto',sans-serif;
+  font-style: italic;
+  text-shadow: rgb(106, 106, 117);
+}
+.bi-telephone{
+  color:cornsilk;
+  font-size: xx-large;
+  text-shadow:rgb(106, 106, 117);
+  
+}
+
+i{
+ font-weight: 900;   
+}
+
+
+hr{
+  width: 12px;
+  height: 2px;
+  color:linear-gradient(rgba(0,224,254, 0.7),rgba(17,7,254,0.7));
+   
+}
+
+
+.footer-text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 
+
+}
+
